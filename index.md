@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Iain McClafferty</title>
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript" src="js/js.js"></script>
+  </head>
+  <body>
+    <header id="welcome">
+      <h1 class="landing-page">Iain McClafferty,<br>Junior Software Developer</h1>
+    </header>
+    <header id="welcome-mask">
+    </header>
+    <!-- <h1 class="exp-header">Languages</h1> -->
+
+    <article id="main">
+      <div class="main-grid">
+        <h1 class="about-me heading">About Me</h1>
+        <h1 class="projects heading">Projects</h1>
+        <h1 class="languages heading">Languages</h1>
+        <h1 class="contact heading">Contact</h1>
+        <img class="polaroids" src="image/polaroids.png" alt="polaroid images"/>
+
+      </div>
+      <section id="about">
+        <button class="about-close"><img src="image/close-button.png"></button>
+        <h1 class="about-me-header">About Me</h1>
+        <section>
+          <p><firstletter>H</firstletter>ello, I'm Iain
+            <br><br>
+            I am at a very exciting time of my life - my beautiful partner gave me a beautiful son last year, I joined the Scottish Fire and Rescue Service as a retained Fire Fighter and I am in the process of changing career.
+            <br><br>
+            After three years working in the gas industry, I decided to follow my heart and move into the tech industry - which brought me to CodeClan, where I am currently studying.
+            <br><br>
+            I already have four projects under my belt, with a fifth to be added very soon - see the 'Projects' section for details.
+            <br><br>
+            Peace and Love,
+            <br>
+            Iain
+        </section>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <button class="projects-close"><img src="image/close-button.png"></button>
+        <h1 class="projects-header">Projects</h1>
+        <div class='projects-wrapper'>
+          <a href="https://github.com/L3n1ad/super_trumps_card_game" target="_blank"><img class="landscape-project" src="image/supertrumps.png" alt="Super Trumps"></a>
+          <a href="https://github.com/L3n1ad/super_trumps_card_game" target="_blank"><p>Super Trumps - Top Trumps based game made as part of a group project.</p></a>
+          <a href="https://github.com/EonMcC/Travucket" target="_blank"><img class="landscape-project" src="image/travucket.png" alt="Travucket"></a>
+          <a href="https://github.com/EonMcC/Travucket" target="_blank"><p>Travucket - A bucket list app that allows user to save and mark off countries to visit.</p></a>
+          <a href="https://github.com/EonMcC/codinglog_v3" target="_blank"><img class="landscape-project" src="image/codinglog.png" alt="Coding Log"></a>
+          <a href="https://github.com/EonMcC/codinglog_v3" target="_blank"><p>Coding Log V3 - An app to help log the ammount of time spent learning coding languages.</p></a>
+          <a href="https://github.com/EonMcC/seven_meals" target="_blank"><img class="portrait-project" src="image/sevenmeals.png" alt="Seven Meals"></a>
+          <a href="https://github.com/EonMcC/seven_meals" target="_blank"><p>Seven Meals (Work In Progress) - A mobile app that creates a shopping list from meals saved to a week.</p></a>
+        </div>
+      </section>
+
+
+      <!-- Languages -->
+      <section id="languages">
+        <button class="languages-close"><img src="image/close-button.png"></button>
+        <h1 class="languages-header">Languages</h1>
+
+        <div class="language-wrap">
+          <img class="logo-java" src="image/java.png" alt="java logo">
+          <p>Java with Spring, Hibernate, Assert, PostreSQL</p>
+        </div>
+
+        <div class="language-wrap">
+          <img class="logo" src="image/ruby_logo_color.png" alt="ruby logo">
+          <p>Ruby with Sinatra, PostreSQL</p>
+        </div>
+
+        <div class="language-wrap">
+          <img class="logo" src="image/js_logo_color.png" alt="js logo">
+          <p>JavaScript with React, Vue.JS, Mocha, Protractor, MongoDB</p>
+        </div>
+
+        <div class="language-wrap">
+          <img class="logo" src="image/css_logo_color.png" alt="css logo">
+          <p>CSS</p>
+        </div>
+
+        <div class="language-wrap">
+          <img class="logo" src="image/html_logo_color.png" alt="html logo">
+          <p>HTML</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <button class="contact-close"><img src="image/close-button.png"></button>
+        <h1 class="contact-header">Contact</h1>
+        <p>
+          E-mail <strong>|</strong> iain.mcc@blueyonder.co.uk
+          <br><br>
+          LinkedIn <strong>|</strong> iain-mcclafferty
+          <br><br>
+          GitHub <strong>|</strong> EonMcC
+        </p>
+      </section>
+
+    </article>
+    <hr>
+  </body>
+</html>
