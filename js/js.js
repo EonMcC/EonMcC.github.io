@@ -32,7 +32,7 @@ const squares = [];
 
 const createSquare = function () {
   const base = 'mask-';
-  for (i = 0; i <= 1300; i++) {
+  for (i = 0; i <= 1500; i++) {
     let welcome = document.querySelector('#welcome-mask');
     squares.push(`.${base}${i}`);
     let square = document.createElement('div');
@@ -65,7 +65,7 @@ const fadeOut = function () {
 //About Me
 const handleAboutClick = function () {
   const toChangeAbout = document.querySelector('#about');
-  toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%;";
+  toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%";
 };
 const handleAboutClose = function () {
   const toClose = document.querySelector('#about');
