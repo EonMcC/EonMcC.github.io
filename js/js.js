@@ -66,6 +66,8 @@ const fadeOut = function () {
 const handleAboutClick = function () {
   const toChangeAbout = document.querySelector('#about');
   toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%";
+  const toChangeAboutPar = document.querySelector('#about p');
+  toChangeAboutPar.style = "opacity: 1; transition-delay: 1s;"
 };
 const handleAboutClose = function () {
   const toClose = document.querySelector('#about');

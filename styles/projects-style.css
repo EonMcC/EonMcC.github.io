@@ -1,6 +1,6 @@
 .projects {
   grid-area: 4/2/5/3;
-transform: rotate(-5deg);}
+  transform: rotate(-5deg);}
 
 .projects:hover {
   grid-area: 4/2/5/3;

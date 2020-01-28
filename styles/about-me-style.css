@@ -35,3 +35,7 @@
   padding: 2% 4% 4% 4%;
   border-bottom: #F18F01 solid 2px;
 }
+
+#about p {
+  opacity: 0;
+}
