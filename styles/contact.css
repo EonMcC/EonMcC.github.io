@@ -1,0 +1,37 @@
+.contact {
+  grid-area: 8/2/9/3;
+}
+
+.contact:hover {
+  grid-area: 8/2/9/3;
+  color: #CBFF8C;
+  transition-duration: 1s;
+  text-shadow: none;
+}
+
+#contact {
+  opacity: 0;
+  background-color: white;
+  height: 5%;
+  width: 5%;
+  z-index: -1;
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px black;
+  padding: 1%;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+.contact-header {
+  color: white;
+  text-shadow: -2px -2px 0 #CBFF8C, 2px -2px 0 #CBFF8C, -2px 2px 0 #CBFF8C, 2px 2px 0 #CBFF8C;
+  font-size: 2.5rem;
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 2px;
+  padding: 2% 4% 4% 4%;
+  border-bottom: #CBFF8C solid 2px;
+}

@@ -1,0 +1,77 @@
+.projects {
+  grid-area: 4/2/5/3;
+}
+
+.projects:hover {
+  grid-area: 4/2/5/3;
+  color: #690375;
+  transition-duration: 1s;
+  text-shadow: none;
+}
+
+#projects {
+  opacity: 0;
+  background-color: white;
+  height: 5%;
+  width: 5%;
+  z-index: -1;
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px black;
+  padding: 1%;
+  overflow: hidden;
+}
+
+.projects-header {
+  color: white;
+  text-shadow: -2px -2px 0 #690375, 2px -2px 0 #690375, -2px 2px 0 #690375, 2px 2px 0 #690375;
+  font-size: 2.5rem;
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 2px;
+  padding: 2% 4% 4% 4%;
+  border-bottom: #690375 solid 2px;
+}
+
+.projects-wrapper {
+  margin: 3%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr;
+  overflow: contain;
+  grid-row-gap: 1%;
+  overflow: scroll;
+  height: 70%;
+}
+
+.projects-wrapper a, a:visited {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.landscape-project {
+  width: 100%;
+  border: solid black 2px;
+  margin: auto;
+}
+
+.landscape-project:hover {
+  width: 100%;
+  border: solid #690375 2px;
+  margin: auto;
+}
+
+.portrait-project {
+  width: 40%;
+  border: solid black 2px;
+  margin: auto;
+}
+
+.portrait-project:hover {
+  width: 40%;
+  border: solid #690375 2px;
+  margin: auto;
+}

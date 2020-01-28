@@ -1,0 +1,36 @@
+.about-me {
+  grid-area: 2/2/3/3;
+}
+
+.about-me:hover {
+  grid-area: 2/2/3/3;
+  color: #F18F01;
+  transition-duration: 1s;
+  text-shadow: none;
+}
+
+#about {
+  opacity: 0;
+  background-color: white;
+  height: 5%;
+  width: 5%;
+  z-index: -1;
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px black;
+  padding: 1%;
+  overflow: hidden;
+}
+
+.about-me-header {
+  color: white;
+  text-shadow: -2px -2px 0 #F18F01, 2px -2px 0 #F18F01, -2px 2px 0 #F18F01, 2px 2px 0 #F18F01;
+  font-size: 2.5rem;
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 2px;
+  padding: 2% 4% 4% 4%;
+  border-bottom: #F18F01 solid 2px;
+}
