@@ -312,3 +312,7 @@ firstletter {
 .logo{
   width: 5%;
 }
+
+a {
+  text-decoration: none;
+}
