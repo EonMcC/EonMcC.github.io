@@ -1,6 +1,6 @@
 .languages {
   grid-area: 6/2/7/3;
-}
+transform: rotate(-5deg);}
 
 .languages:hover {
   grid-area: 6/2/7/3;

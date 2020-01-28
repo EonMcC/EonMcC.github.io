@@ -1,5 +1,6 @@
 .about-me {
   grid-area: 2/2/3/3;
+  transform: rotate(-5deg);
 }
 
 .about-me:hover {

@@ -1,6 +1,6 @@
 .contact {
   grid-area: 8/2/9/3;
-}
+transform: rotate(-5deg);}
 
 .contact:hover {
   grid-area: 8/2/9/3;
