@@ -32,7 +32,7 @@ const squares = [];
 
 const createSquare = function () {
   const base = 'mask-';
-  for (i = 0; i <= 1000; i++) {
+  for (i = 0; i <= 1300; i++) {
     let welcome = document.querySelector('#welcome-mask');
     squares.push(`.${base}${i}`);
     let square = document.createElement('div');
