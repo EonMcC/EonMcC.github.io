@@ -86,8 +86,6 @@ const handleProjectsClose = function () {
 const handleLanguagesClick = function () {
   const toChangeLanguages = document.querySelector('#languages');
   toChangeLanguages.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%;";
-  // const moveIcons = document.querySelector('.logo');
-  // moveIcons.style = "opacity: 1; margin-left: 60%; transition-duration: .7s; transition-delay: 1s";
 };
 const handleLanguagesClose = function () {
   const toClose = document.querySelector('#languages');
