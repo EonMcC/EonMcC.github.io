@@ -32,11 +32,20 @@
 }
 
 button {
+  outline: none;
   background: none;
   border: none;
   position: absolute;
   right: 1%;
   cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(2px);
+}
+
+button:active {
+  transform: translateY(4px);
 }
 
 button img{
