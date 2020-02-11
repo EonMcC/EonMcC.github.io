@@ -77,7 +77,7 @@ const handleAboutClose = function () {
 //Projects
 const handleProjectsClick = function () {
   const popUp = document.querySelector('.currently-working-on');
-  popUp.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 20vh; width: 100vw; position: absolute; top: 0; left: 0%; padding: 0px;";
+  popUp.style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
   const toChangeProjects = document.querySelector('#projects');
   toChangeProjects.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 60vh; width: 55vw; position: absolute; top: 20%; left: 25%;";
 };
