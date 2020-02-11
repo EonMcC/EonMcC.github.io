@@ -65,7 +65,7 @@ const fadeOut = function () {
 //About Me
 const handleAboutClick = function () {
   const toChangeAbout = document.querySelector('#about');
-  toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%";
+  toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%";
   const toChangeAboutPar = document.querySelector('#about p');
   toChangeAboutPar.style = "opacity: 1; transition-delay: 1s;"
 };
@@ -76,10 +76,14 @@ const handleAboutClose = function () {
 
 //Projects
 const handleProjectsClick = function () {
+  const popUp = document.querySelector('.currently-working-on');
+  popUp.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 20vh; width: 100vw; position: absolute; top: 0; left: 0%; padding: 0px;";
   const toChangeProjects = document.querySelector('#projects');
-  toChangeProjects.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 60vh; width: 55vw; position: absolute; top: 25%; left: 25%;";
+  toChangeProjects.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 60vh; width: 55vw; position: absolute; top: 20%; left: 25%;";
 };
 const handleProjectsClose = function () {
+  const popUpToClose = document.querySelector('.currently-working-on');
+  popUpToClose.style = "z-index: -1 opacity: 0; transition-duration: 1s;"
   const toClose = document.querySelector('#projects');
   toClose.style = "z-index: -1; opacity: 0; transition-duration: 1s; height: 5%; width: 5%; top: 30%; left: 75%;";
 };
@@ -87,7 +91,7 @@ const handleProjectsClose = function () {
 //Languages
 const handleLanguagesClick = function () {
   const toChangeLanguages = document.querySelector('#languages');
-  toChangeLanguages.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%;";
+  toChangeLanguages.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%;";
 };
 const handleLanguagesClose = function () {
   const toClose = document.querySelector('#languages');
@@ -97,7 +101,7 @@ const handleLanguagesClose = function () {
 //Contact
 const handleContactClick = function () {
   const toChangeContact = document.querySelector('#contact');
-  toChangeContact.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 25%; left: 25%;";
+  toChangeContact.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%;";
 };
 const handleContactClose = function () {
   const toClose = document.querySelector('#contact');
