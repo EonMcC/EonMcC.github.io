@@ -21,6 +21,7 @@
   border-radius: 10px;
   margin: auto;
   box-shadow: 10px 10px 10px black;
+  overflow: hidden;
 }
 
 .polaroids{
