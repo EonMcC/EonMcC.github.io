@@ -34,20 +34,5 @@
   color: white;
   height: 50px;
   width: 50px;
-  transform: rotate(360deg);
-}
-
-.heading {
-  font-size: 2.5rem;
-  padding-left: 5%;
-  color: white;
-  font-family: 'Tomorrow', sans-serif;
-  text-align: left;
-  letter-spacing: 2px;
-  cursor: pointer;
-  font-style: oblique;
-  border-bottom: 4px solid #08A4BD;
-  margin-right: 20%;
-  margin-left: 10%;
-  text-shadow: -2px -2px 2px #08A4BD, 2px -2px 2px #08A4BD, -2px 2px 2px #08A4BD, 2px 2px 2px #08A4BD;
+  transition-duration: 1s;
 }

@@ -1,14 +1,3 @@
-.contact {
-  grid-area: 8/2/9/3;
-  transform: rotate(-5deg);}
-
-.contact:hover {
-  grid-area: 8/2/9/3;
-  color: #CBFF8C;
-  transition-duration: 1s;
-  text-shadow: none;
-}
-
 #contact {
   opacity: 0;
   background-color: white;

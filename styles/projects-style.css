@@ -1,14 +1,3 @@
-.projects {
-  grid-area: 4/2/5/3;
-  transform: rotate(-5deg);}
-
-.projects:hover {
-  grid-area: 4/2/5/3;
-  color: #690375;
-  transition-duration: 1s;
-  text-shadow: none;
-}
-
 #projects {
   opacity: 0;
   background-color: white;

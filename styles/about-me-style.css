@@ -1,15 +1,3 @@
-.about-me {
-  grid-area: 2/2/3/3;
-  transform: rotate(-5deg);
-}
-
-.about-me:hover {
-  grid-area: 2/2/3/3;
-  color: #F18F01;
-  transition-duration: 1s;
-  text-shadow: none;
-}
-
 #about {
   opacity: 0;
   background-color: white;
