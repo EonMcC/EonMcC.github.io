@@ -12,6 +12,37 @@
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   overflow: hidden;
+  transition-duration: 1s;
+}
+#languages-open {
+  background-color: white;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1%;
+  z-index: 10; 
+  opacity: 1; 
+  transition-duration: 1s; 
+  height: auto; 
+  width: 55vw; 
+  position: absolute; 
+  top: 20%; 
+  left: 25%;
+}
+#languages-open-mobile {
+  background-color: white;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1%;
+  z-index: 10; 
+  opacity: 1; 
+  transition-duration: 1s; 
+  height: auto; 
+  width: 95vw; 
+  position: absolute; 
+  top: 20%; 
+  left: 1%;
 }
 
 .languages-header {
@@ -24,7 +55,7 @@
   border-bottom: #9E0031 solid 2px;
 }
 
-#languages p {
+#languages p, #languages-open p, #languages-open-mobile p{
   display: inline;
   padding: 1%;
   padding-left: 3%;

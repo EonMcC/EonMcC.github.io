@@ -13,6 +13,39 @@
   padding: 1%;
   overflow: hidden;
   font-size: 1.2rem;
+  transition-duration: 1s;
+}
+#contact-open {
+  opacity: 1;
+  background-color: white;
+  height: auto;
+  width: 55vw;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1%;
+  font-size: 1.2rem;
+  transition-duration: 1s;
+}
+#contact-open-mobile {
+  opacity: 1;
+  background-color: white;
+  height: auto;
+  width: 95vw;
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1%;
+  font-size: 1.4rem;
+  transition-duration: 1s;
 }
 
 .contact-header {

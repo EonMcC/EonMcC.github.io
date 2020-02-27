@@ -62,47 +62,82 @@ const fadeOut = function () {
   square.style.transitionDuration = '2s';
 };
 
-//About Me
-const handleAboutClick = function () {
-  document.querySelector('#about').id = "about-open";
-  // toChangeAbout.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%";
-  document.querySelector('#about-open p').style = 'opacity: 1; transition-delay: 1s;'
-};
-const handleAboutClose = function () {
-  document.querySelector('#about-open').id = "about";
-  document.querySelector('#about p').style = "opacity: 0;"
-};
+const media = window.matchMedia( "(max-width: 1000px)" );
+//If mobile
+if (media.matches) {
+  //About Me - mobile
+  var handleAboutClick = function () {  
+      document.querySelector('#about').id = "about-open-mobile";
+      document.querySelector('#about-open-mobile p').style = 'opacity: 1; font-size: 1.5rem; transition-delay: 1s;'
+  }
+  var handleAboutClose = function () {
+    document.querySelector('#about-open-mobile').id = "about";
+    document.querySelector('#about p').style = "opacity: 0;"
+  };
 
-//Projects
-const handleProjectsClick = function () {
-  const popUp = document.querySelector('.currently-working-on');
-  popUp.style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
-  const toChangeProjects = document.querySelector('#projects');
-  toChangeProjects.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: 60vh; width: 55vw; position: absolute; top: 20%; left: 25%;";
-};
-const handleProjectsClose = function () {
-  const popUpToClose = document.querySelector('.currently-working-on');
-  popUpToClose.style = "z-index: -1 opacity: 0; transition-duration: 1s;"
-  const toClose = document.querySelector('#projects');
-  toClose.style = "z-index: -1; opacity: 0; transition-duration: 1s; height: 5%; width: 5%; top: 30%; left: 75%;";
-};
+  //Projects - mobile
+  var handleProjectsClick = function () {
+    document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
+    document.querySelector('#projects').id = "projects-open-mobile";
 
-//Languages
-const handleLanguagesClick = function () {
-  const toChangeLanguages = document.querySelector('#languages');
-  toChangeLanguages.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%;";
-};
-const handleLanguagesClose = function () {
-  const toClose = document.querySelector('#languages');
-  toClose.style = "z-index: -1; opacity: 0; transition-duration: 1s; height: 5%; width: 5%; top: 50%; left: 75%;";
-};
+  };
+  var handleProjectsClose = function () {
+    document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
+    document.querySelector('#projects-open-mobile').id = "projects";
+  };
 
-//Contact
-const handleContactClick = function () {
-  const toChangeContact = document.querySelector('#contact');
-  toChangeContact.style = "z-index: 10; opacity: 1; transition-duration: 1s; height: auto; width: 55vw; position: absolute; top: 20%; left: 25%;";
-};
-const handleContactClose = function () {
-  const toClose = document.querySelector('#contact');
-  toClose.style = "z-index: -1; opacity: 0; transition-duration: 1s; height: 5%; width: 5%; top: 70%; left: 75%;";
-};
+    //Languages - mobile
+    var handleLanguagesClick = function () {
+      document.querySelector('#languages').id = 'languages-open-mobile';
+    };
+    var handleLanguagesClose = function () {
+      document.querySelector('#languages-open-mobile').id = 'languages';
+    };
+
+    //Contact - mobile
+    var handleContactClick = function () {
+      document.querySelector('#contact').id = 'contact-open-mobile';
+    };
+    var handleContactClose = function () {
+      document.querySelector('#contact-open-mobile').id = 'contact';
+    };
+
+
+  //Else if not mobile
+  } else {
+    //About Me
+    var handleAboutClick = function () {
+      document.querySelector('#about').id = "about-open";
+      document.querySelector('#about-open p').style = 'opacity: 1; transition-delay: 1s;'
+  }
+    var handleAboutClose = function () {
+      document.querySelector('#about-open').id = "about";
+      document.querySelector('#about p').style = "opacity: 0;"
+    };
+
+  //Projects
+    var handleProjectsClick = function () {
+      document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
+      document.querySelector('#projects').id = "projects-open";
+    };
+    var handleProjectsClose = function () {
+      document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
+      document.querySelector('#projects-open').id = "projects";
+    };
+
+    //Languages
+    var handleLanguagesClick = function () {
+      document.querySelector('#languages').id = 'languages-open';
+    };
+    var handleLanguagesClose = function () {
+      document.querySelector('#languages-open').id = 'languages';
+    };
+
+    //Contact
+    var handleContactClick = function () {
+      document.querySelector('#contact').id = 'contact-open';
+    };
+    var handleContactClose = function () {
+      document.querySelector('#contact-open').id = 'contact';
+    };
+  };
