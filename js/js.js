@@ -52,6 +52,7 @@ const fadeIn = function () {
   }
   for (square of squares) {
     square.style.opacity = '0';
+    square.style.transitionDelay = '0.5s';
     square.style.transitionDuration = '1s';
   }
 };

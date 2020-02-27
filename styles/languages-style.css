@@ -26,8 +26,8 @@
   height: auto; 
   width: 55vw; 
   position: absolute; 
-  top: 20%; 
-  left: 25%;
+  top: 10%; 
+  left: 20%;
 }
 #languages-open-mobile {
   background-color: white;
@@ -56,20 +56,55 @@
 }
 
 #languages p, #languages-open p, #languages-open-mobile p{
-  display: inline;
-  padding: 1%;
-  padding-left: 3%;
+  /* padding: 1%;
+  padding-left: 3%; */
   font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(158, 0, 50, 0.9);
+  transform: rotate(-3deg);
+  overflow: visible;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 2%;
+}
+
+.language-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .language-wrap {
-  margin: 3% 0 3% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
-.logo-java {
-  width: 6%;
+.java-logo {
+  background-image: url('../image/java_faint.png');
+}
+.ruby-logo {
+  background-image: url('../image/ruby_logo_faint.png');
+}
+.js-logo {
+  background-image: url('../image/js_logo_faint.png');
+}
+.css-logo {
+  background-image: url('../image/css_logo_faint.png');
+}
+.html-logo {
+  background-image: url('../image/html_logo_faint.png');
 }
 
-.logo{
+/* .logo{
   width: 5%;
-}
+} */
