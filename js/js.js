@@ -26,7 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
   contact.addEventListener('click', handleContactClick);
   const hideContact = document.querySelector('.contact-close');
   hideContact.addEventListener('click', handleContactClose);
+
+  var flkty = new Flickity( '.main-gallery', {
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
 });
+
 //Landing Page Squares
 const squares = [];
 
