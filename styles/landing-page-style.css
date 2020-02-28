@@ -1,7 +1,8 @@
 #welcome {
     height: 100vh;
     width: 100vw;
-    background-color: #08A4BD;
+    background-image: linear-gradient(rgb(247, 247, 247), #08A4BD);
+
 }
 
 #welcome-mask{
