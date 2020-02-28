@@ -24,10 +24,10 @@
   opacity: 1; 
   transition-duration: 1s; 
   height: auto; 
-  width: 55vw; 
+  width: 75vw; 
   position: absolute; 
-  top: 10%; 
-  left: 20%;
+  top: 5%; 
+  left: 10%;
 }
 #languages-open-mobile {
   background-color: white;
@@ -81,7 +81,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 5%;
+  margin: 3% 5% 0% 5%;
   height: 200px;
   width: 200px;
   background-position: center;
