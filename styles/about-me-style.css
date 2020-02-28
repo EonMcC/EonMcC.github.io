@@ -8,9 +8,6 @@
     position: absolute;
     top: 10%;
     left: 75%;
-    border-radius: 10px;
-    border: solid black 1px;
-    box-shadow: 5px 5px 5px black;
     padding: 1%;
     overflow: hidden;
   }
@@ -25,6 +22,9 @@
     position: absolute; 
     top: 20%; 
     left: 25%;
+    border: solid black 1px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
   }
 
   .about-me-header {

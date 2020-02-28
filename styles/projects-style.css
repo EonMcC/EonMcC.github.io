@@ -17,12 +17,12 @@
 #projects-open {
   opacity: 1;
   background-color: white;
-  height: 60vh;
-  width: 55vw;
+  height: 80vh;
+  width: 60vw;
   z-index: 10;
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 10%;
+  left: 18%;
   border-radius: 10px;
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
@@ -106,23 +106,32 @@
 .gallery-cell {
   width: 100%;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.055);
+  border-radius: 10px;
 }
 
 .gallery-cell a {
-  position: absolute;
   display: block;
   top: 40%;
   margin-left: 10%;
+  margin-bottom: 1%;
   text-align: center;
   width: 80%;
-  color: white;
-  background-color: #6a0375de;
-  font-weight: 500;
-  font-size: 1.5rem;
+  color: black;
+  background-color: #cacaca80;
+  border-radius: 10px;
+  
 }
 
 .carousel-image {
   display: block;
-  margin: auto;
-  width: 700px;
+  margin: 10px auto;
+  width: 500px;
+  border-radius: 10px;
+  border: double black 1px;
 }
+
+.flickity-button-icon {
+  color: #690375;
+}
+
