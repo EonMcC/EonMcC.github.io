@@ -86,7 +86,6 @@
   width: 200px;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .java-logo {
@@ -104,7 +103,3 @@
 .html-logo {
   background-image: url('../image/html_logo_faint.png');
 }
-
-/* .logo{
-  width: 5%;
-} */

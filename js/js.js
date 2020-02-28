@@ -26,7 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
   contact.addEventListener('click', handleContactClick);
   const hideContact = document.querySelector('.contact-close');
   hideContact.addEventListener('click', handleContactClose);
+
+  var flkty = new Flickity( '.main-gallery', {
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
 });
+
 //Landing Page Squares
 const squares = [];
 
@@ -78,12 +85,12 @@ if (media.matches) {
 
   //Projects - mobile
   var handleProjectsClick = function () {
-    document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
+    // document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
     document.querySelector('#projects').id = "projects-open-mobile";
 
   };
   var handleProjectsClose = function () {
-    document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
+    // document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
     document.querySelector('#projects-open-mobile').id = "projects";
   };
 
@@ -118,11 +125,11 @@ if (media.matches) {
 
   //Projects
     var handleProjectsClick = function () {
-      document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
+      // document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
       document.querySelector('#projects').id = "projects-open";
     };
     var handleProjectsClose = function () {
-      document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
+      // document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
       document.querySelector('#projects-open').id = "projects";
     };
 

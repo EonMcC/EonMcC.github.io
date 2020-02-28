@@ -92,7 +92,7 @@
     padding-left: 10%;
   }
 
-  button {
+  .close {
     outline: none;
     background: none;
     border: none;
@@ -102,12 +102,12 @@
     opacity: .4;
   }
 
-  button:hover {
+  .close:hover {
     transform: scale(0.9);
     opacity: .8;
   }
 
-  button:active {
+  .close:active {
     transform: scale(0.8);
     opacity: 1;
   }
