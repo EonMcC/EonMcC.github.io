@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // options
     cellAlign: 'left',
     contain: true,
-    wrapAround: true,
-    autoPlay: 2000
+    wrapAround: true
   });
 });
 
