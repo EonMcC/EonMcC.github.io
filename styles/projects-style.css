@@ -33,7 +33,7 @@
 #projects-open-mobile {
   opacity: 1;
   background-color: white;
-  height: 60vh;
+  height: 50vh;
   width: 95vw;
   z-index: 10;
   position: absolute;
@@ -101,6 +101,7 @@
 
 .main-gallery {
   margin-top: 5%;
+  height: 50%;
 }
 
 .gallery-cell {
