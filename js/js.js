@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
   var flkty = new Flickity( '.main-gallery', {
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    wrapAround: true,
+    autoPlay: 2000
   });
 });
 

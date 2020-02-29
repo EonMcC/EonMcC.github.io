@@ -33,7 +33,7 @@
 #projects-open-mobile {
   opacity: 1;
   background-color: white;
-  height: 50vh;
+  height: 40vh;
   width: 95vw;
   z-index: 10;
   position: absolute;
@@ -101,7 +101,7 @@
 
 .main-gallery {
   margin-top: 5%;
-  height: 50%;
+  height: 60%;
 }
 
 .gallery-cell {
@@ -121,7 +121,6 @@
   color: black;
   background-color: #cacaca80;
   border-radius: 10px;
-  
 }
 
 .carousel-image {
@@ -134,5 +133,13 @@
 
 .flickity-button-icon {
   color: #690375;
+}
+
+.flickity-page-dots > .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
 }
 
