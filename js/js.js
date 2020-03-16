@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // options
     cellAlign: 'left',
     contain: true,
-    wrapAround: true
+    wrapAround: true,
+    pageDots: false
   });
 });
 

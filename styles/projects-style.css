@@ -17,7 +17,7 @@
 #projects-open {
   opacity: 1;
   background-color: white;
-  height: 80vh;
+  height: 90vh;
   width: 60vw;
   z-index: 10;
   position: absolute;
@@ -135,11 +135,12 @@
   color: #690375;
 }
 
-.flickity-page-dots > .dot {
+/* .flickity-page-dots > .dot {
   width: 12px;
   height: 12px;
   opacity: 1;
   background: transparent;
   border: 2px solid white;
-}
+  display: block;
+} */
 
