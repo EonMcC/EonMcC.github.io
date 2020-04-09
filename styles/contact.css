@@ -58,3 +58,25 @@
   padding: 2% 4% 4% 4%;
   border-bottom: #7fc926 solid 2px;
 }
+
+.contact-details-container {
+  display: flex;
+  margin: 5% 0% 5% 2%;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.contact-details > * {
+  padding: 0;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+.contact-details a {
+  text-decoration: underline;
+}
