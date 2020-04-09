@@ -50,10 +50,11 @@
 
 .contact-header {
   color: white;
-  text-shadow: -2px -2px 0 #CBFF8C, 2px -2px 0 #CBFF8C, -2px 2px 0 #CBFF8C, 2px 2px 0 #CBFF8C;
+  text-shadow: -2px -2px 0 #7fc926, 2px -2px 0 #7fc926, -2px 2px 0 #7fc926,
+    2px 2px 0 #7fc926;
   font-size: 2.5rem;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: "Tomorrow", sans-serif;
   letter-spacing: 2px;
   padding: 2% 4% 4% 4%;
-  border-bottom: #CBFF8C solid 2px;
+  border-bottom: #7fc926 solid 2px;
 }
