@@ -20,13 +20,13 @@
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
-  z-index: 10; 
-  opacity: 1; 
-  transition-duration: 1s; 
-  height: auto; 
-  width: 75vw; 
-  position: absolute; 
-  top: 5%; 
+  z-index: 10;
+  opacity: 1;
+  transition-duration: 1s;
+  height: auto;
+  width: 75vw;
+  position: absolute;
+  top: 10%;
   left: 10%;
 }
 #languages-open-mobile {
@@ -35,27 +35,30 @@
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
-  z-index: 10; 
-  opacity: 1; 
-  transition-duration: 1s; 
-  height: auto; 
-  width: 95vw; 
-  position: absolute; 
-  top: 20%; 
+  z-index: 10;
+  opacity: 1;
+  transition-duration: 1s;
+  height: auto;
+  width: 95vw;
+  position: absolute;
+  top: 20%;
   left: 1%;
 }
 
 .languages-header {
   color: white;
-  text-shadow: -2px -2px 0 #9E0031, 2px -2px 0 #9E0031, -2px 2px 0 #9E0031, 2px 2px 0 #9E0031;
+  text-shadow: -2px -2px 0 #9e0031, 2px -2px 0 #9e0031, -2px 2px 0 #9e0031,
+    2px 2px 0 #9e0031;
   font-size: 2.5rem;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: "Tomorrow", sans-serif;
   letter-spacing: 2px;
   padding: 2% 4% 4% 4%;
-  border-bottom: #9E0031 solid 2px;
+  border-bottom: #9e0031 solid 2px;
 }
 
-#languages p, #languages-open p, #languages-open-mobile p{
+#languages p,
+#languages-open p,
+#languages-open-mobile p {
   /* padding: 1%;
   padding-left: 3%; */
   font-size: 1.2rem;
@@ -89,17 +92,17 @@
 }
 
 .java-logo {
-  background-image: url('../image/java_faint.png');
+  background-image: url("../image/java_faint.png");
 }
 .ruby-logo {
-  background-image: url('../image/ruby_logo_faint.png');
+  background-image: url("../image/ruby_logo_faint.png");
 }
 .js-logo {
-  background-image: url('../image/js_logo_faint.png');
+  background-image: url("../image/js_logo_faint.png");
 }
 .css-logo {
-  background-image: url('../image/css_logo_faint.png');
+  background-image: url("../image/css_logo_faint.png");
 }
 .html-logo {
-  background-image: url('../image/html_logo_faint.png');
+  background-image: url("../image/html_logo_faint.png");
 }
