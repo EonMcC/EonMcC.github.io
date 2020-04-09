@@ -1,6 +1,6 @@
 #contact {
   opacity: 0;
-  background-color: white;
+  background-color: var(--bg);
   height: 5%;
   width: 5%;
   z-index: -1;
@@ -17,7 +17,7 @@
 }
 #contact-open {
   opacity: 1;
-  background-color: white;
+  background-color: var(--bg);
   height: auto;
   width: 55vw;
   z-index: 10;
@@ -31,9 +31,10 @@
   font-size: 1.2rem;
   transition-duration: 1s;
 }
+
 #contact-open-mobile {
   opacity: 1;
-  background-color: white;
+  background-color: var(--bg);
   height: auto;
   width: 95vw;
   z-index: 10;
@@ -79,4 +80,9 @@
 
 .contact-details a {
   text-decoration: underline;
+  color: var(--text);
+}
+.contact-details a:visited {
+  text-decoration: underline;
+  color: var(--text);
 }

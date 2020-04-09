@@ -1,6 +1,6 @@
 #languages {
   opacity: 0;
-  background-color: white;
+  background-color: var(--bg);
   height: 5%;
   width: 5%;
   z-index: -1;
@@ -15,7 +15,7 @@
   transition-duration: 1s;
 }
 #languages-open {
-  background-color: white;
+  background-color: var(--bg);
   border-radius: 10px;
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
@@ -29,8 +29,9 @@
   top: 10%;
   left: 10%;
 }
+
 #languages-open-mobile {
-  background-color: white;
+  background-color: var(--bg);
   border-radius: 10px;
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;

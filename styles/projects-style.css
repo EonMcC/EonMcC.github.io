@@ -1,6 +1,6 @@
 #projects {
   opacity: 0;
-  background-color: white;
+  background-color: var(--bg);
   height: 5%;
   width: 5%;
   z-index: -1;
@@ -16,7 +16,7 @@
 }
 #projects-open {
   opacity: 1;
-  background-color: white;
+  background-color: var(--bg);
   height: 80vh;
   width: 60vw;
   z-index: 10;
@@ -30,9 +30,10 @@
   overflow: hidden;
   transition-duration: 1s;
 }
+
 #projects-open-mobile {
   opacity: 1;
-  background-color: white;
+  background-color: var(--bg);
   height: auto;
   width: 95vw;
   z-index: 10;

@@ -1,15 +1,77 @@
+:root {
+  --bg: white;
+  --landing-bg: linear-gradient(#60c9da, #08a4bd);
+  --main-bg: linear-gradient(#08a4bd, #60c9da);
+  --text: #121212;
+}
+html[data-theme="dark"] {
+  --bg: #121212;
+  --landing-bg: linear-gradient(black, #0c6977);
+  --main-bg: linear-gradient(#0c6977, black);
+  --text: white;
+}
+
 @media (max-width: 3000px) {
   * {
     margin: 0;
     font-family: "Avenir", Helvetica, Arial, sans-serif;
+    color: var(--text);
   }
 
   #main {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(#08a4bd, #94dce7);
+    background-image: var(--main-bg);
     position: relative;
     padding-top: 50px;
+  }
+
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 1%;
+  }
+
+  input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: #08a4bd;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+  }
+  label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  label:active:after {
+    width: 45px;
+  }
+  html.transition,
+  html.transition *,
+  html.transition *:before,
+  html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
   }
 
   .main-grid {
@@ -18,7 +80,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(9, 1fr);
-    background-color: white;
+    background-color: var(--bg);
     border-radius: 10px;
     margin: auto;
     box-shadow: 10px 10px 10px black;
@@ -123,6 +185,7 @@
   button img {
     height: 30px;
     width: 30px;
+    background-color: white;
   }
 
   p {

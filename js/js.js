@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   var intervalID = window.setInterval(fadeIn, 1);
   var intervalID = window.setInterval(fadeOut, 10);
 
+  //Dark Mode
+  const checkbox = document.querySelector("input[name=theme");
+  checkbox.addEventListener("change", handleToggle);
+
   //About Me
   const about = document.querySelector(".about-me");
   about.addEventListener("click", handleAboutClick);
@@ -73,6 +77,26 @@ const fadeOut = function () {
   square.style.opacity = ".7";
   square.style.transitionDuration = "2s";
 };
+
+var handleToggle = function () {
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+};
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
+
+// document.body.style.setProperty("--bg", "#121212");
+// document.body.style.setProperty("--text", "white");
+// document.body.style.setProperty("--landing-bg", "black");
 
 const media = window.matchMedia("(max-width: 1000px)");
 //If mobile
