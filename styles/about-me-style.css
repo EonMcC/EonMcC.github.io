@@ -38,10 +38,15 @@
     border-bottom: #f18f01 solid 2px;
   }
 
-  #about p {
+  .about-text-container {
     opacity: 0;
+    margin: 5%;
   }
-  .about-text::first-letter {
+  .about-text-container p {
+    padding: 10px;
+  }
+
+  .first-line::first-letter {
     font-size: 1.3rem;
   }
 

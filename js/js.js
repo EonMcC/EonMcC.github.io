@@ -104,12 +104,13 @@ if (media.matches) {
   //About Me - mobile
   var handleAboutClick = function () {
     document.querySelector("#about").id = "about-open-mobile";
-    document.querySelector("#about-open-mobile p").style =
+    document.querySelector("#about-open-mobile .about-text-container").style =
       "opacity: 1; font-size: 1.5rem; transition-delay: 1s;";
   };
+
   var handleAboutClose = function () {
     document.querySelector("#about-open-mobile").id = "about";
-    document.querySelector("#about p").style = "opacity: 0;";
+    document.querySelector(".about-text-container").style = "opacity: 0;";
   };
 
   //Projects - mobile
@@ -143,12 +144,12 @@ if (media.matches) {
   //About Me
   var handleAboutClick = function () {
     document.querySelector("#about").id = "about-open";
-    document.querySelector("#about-open p").style =
-      "opacity: 1; transition-delay: 1s;";
+    document.querySelector(".about-text-container").style =
+      "opacity: 1; transition-delay: 1s; padding: 10px;";
   };
   var handleAboutClose = function () {
     document.querySelector("#about-open").id = "about";
-    document.querySelector("#about p").style = "opacity: 0;";
+    document.querySelector(".about-text-container").style = "opacity: 0;";
   };
 
   //Projects
