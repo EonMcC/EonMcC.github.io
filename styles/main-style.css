@@ -32,6 +32,9 @@ html[data-theme="dark"] {
     position: absolute;
     margin-top: 1%;
   }
+  .toggle-container > p {
+    padding-left: 17px;
+  }
 
   input {
     height: 0;
@@ -48,6 +51,7 @@ html[data-theme="dark"] {
     border-radius: 100px;
     position: relative;
   }
+
   label:after {
     content: "";
     position: absolute;
