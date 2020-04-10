@@ -41,6 +41,9 @@
   #about p {
     opacity: 0;
   }
+  .about-text::first-letter {
+    font-size: 1.3rem;
+  }
 
   #about-open-mobile {
     z-index: 10;

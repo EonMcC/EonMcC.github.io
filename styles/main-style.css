@@ -199,10 +199,6 @@ html[data-theme="dark"] {
   a {
     text-decoration: none;
   }
-
-  firstletter {
-    font-size: 1.2rem;
-  }
 }
 @media (max-width: 1000px) {
   .main-grid {
