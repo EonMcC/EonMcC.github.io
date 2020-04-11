@@ -27,7 +27,7 @@
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
-  overflow: hidden;
+  overflow: scroll;
   transition-duration: 1s;
 }
 
@@ -143,5 +143,5 @@ a:visited {
 }
 
 .flickity-viewport {
-  height: 500px !important;
+  height: 425px !important;
 }
