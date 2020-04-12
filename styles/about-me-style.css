@@ -10,6 +10,9 @@
     left: 75%;
     padding: 1%;
     overflow: hidden;
+    border: solid black 1px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
   }
 
   #about-open {
@@ -17,7 +20,7 @@
     z-index: 10;
     opacity: 1;
     transition-duration: 1s;
-    height: auto;
+    height: 80vh;
     width: 55vw;
     position: absolute;
     top: 10%;
@@ -25,6 +28,8 @@
     border: solid black 1px;
     box-shadow: 5px 5px 5px black;
     border-radius: 10px;
+    transition-duration: 1s;
+    overflow: scroll;
   }
 
   .about-me-header {

@@ -189,7 +189,8 @@ if (media.matches) {
   };
   var handleAboutClose = function () {
     document.querySelector("#about-open").id = "about";
-    document.querySelector(".about-text-container").style = "opacity: 0;";
+    document.querySelector(".about-text-container").style =
+      "opacity: 0; transition-duration: 1s;";
     openWindow = "";
   };
 

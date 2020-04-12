@@ -13,12 +13,11 @@
   padding: 1%;
   overflow: hidden;
   font-size: 1.2rem;
-  transition-duration: 1s;
 }
 #contact-open {
   opacity: 1;
   background-color: var(--bg);
-  height: auto;
+  height: 35vh;
   width: 55vw;
   z-index: 10;
   position: absolute;
@@ -30,6 +29,7 @@
   padding: 1%;
   font-size: 1.2rem;
   transition-duration: 1s;
+  overflow: scroll;
 }
 
 #contact-open-mobile {

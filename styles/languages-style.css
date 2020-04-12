@@ -23,11 +23,12 @@
   z-index: 10;
   opacity: 1;
   transition-duration: 1s;
-  height: auto;
+  height: 80vh;
   width: 75vw;
   position: absolute;
   top: 10%;
   left: 10%;
+  overflow: scroll;
 }
 
 #languages-open-mobile {
@@ -99,7 +100,7 @@
   background-image: url("../image/ruby_logo_faint.png");
 }
 .js-logo {
-  background-image: url("../image/js_logo_faint2.png");
+  background-image: url("../image/js_logo_faint.png");
 }
 .css-logo {
   background-image: url("../image/css_logo_faint2.png");
