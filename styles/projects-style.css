@@ -116,6 +116,15 @@ a:visited {
 
 .gallery-cell p {
   padding: 2% 0;
+  display: block;
+  top: 40%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  text-align: center;
+  width: 80%;
+  color: black;
+  background-color: #cacaca80;
+  border-radius: 10px;
 }
 
 .gallery-cell a {
@@ -128,6 +137,7 @@ a:visited {
   color: black;
   background-color: #cacaca80;
   border-radius: 10px;
+  text-decoration: underline;
 }
 
 .carousel-image {
@@ -143,5 +153,5 @@ a:visited {
 }
 
 .flickity-viewport {
-  height: 425px !important;
+  height: 460px !important;
 }
