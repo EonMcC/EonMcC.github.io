@@ -44,9 +44,13 @@
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
-  overflow: hidden;
   transition-duration: 1s;
   font-size: 1.5rem;
+  overflow: scroll;
+}
+#projects-open-mobile .flickity-prev-next-button {
+  height: 100px;
+  width: 100px;
 }
 
 .projects-header {
@@ -148,10 +152,10 @@ a:visited {
   border: double black 1px;
 }
 
-.flickity-button-icon {
-  color: #690375;
-}
-
 .flickity-viewport {
   height: 460px !important;
+}
+
+#projects-open-mobile .flickity-viewport {
+  height: 570px !important;
 }
