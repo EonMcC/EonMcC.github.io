@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cellAlign: "left",
     contain: true,
     wrapAround: true,
-    pageDots: false,
+    pageDots: true,
   });
 });
 

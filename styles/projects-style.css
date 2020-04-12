@@ -108,7 +108,18 @@ a:visited {
 
 .main-gallery {
   margin-top: 5%;
-  height: 60%;
+  height: auto;
+}
+
+.flickity-page-dots {
+  top: -25px;
+  z-index: -1;
+}
+.flickity-page-dots .dot.is-selected {
+  background-color: #690375;
+}
+.flickity-prev-next-button .flickity-button-icon > * {
+  color: #690375;
 }
 
 .gallery-cell {
