@@ -110,6 +110,7 @@ const handleAllClose = function (event) {
     event.target === polaroids ||
     event.target === polaroidContainer
   ) {
+    handleBlur(false);
     switch (openWindow) {
       case "about":
         handleAboutClose();
@@ -129,6 +130,21 @@ const handleAllClose = function (event) {
   }
 };
 
+const handleBlur = function (blur) {
+  let toBlur = document.querySelectorAll(".main-grid > *");
+  console.log(blur);
+  if (blur) {
+    toBlur.forEach((element) => {
+      element.style = "filter: blur(2px); transition-duration: 1s;";
+    });
+  } else {
+    console.log(blur);
+    toBlur.forEach((element) => {
+      element.style = "filter: blur(0px); transition-duration: 0.5s;";
+    });
+  }
+};
+
 const media = window.matchMedia("(max-width: 1000px)");
 //If mobile
 if (media.matches) {
@@ -138,12 +154,14 @@ if (media.matches) {
     document.querySelector("#about-open-mobile .about-text-container").style =
       "opacity: 1; font-size: 1.5rem; transition-delay: 1s;";
     openWindow = "about";
+    handleBlur(true);
   };
 
   var handleAboutClose = function () {
     document.querySelector("#about-open-mobile").id = "about";
     document.querySelector(".about-text-container").style = "opacity: 0;";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Projects - mobile
@@ -151,31 +169,37 @@ if (media.matches) {
     // document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
     document.querySelector("#projects").id = "projects-open-mobile";
     openWindow = "projects";
+    handleBlur(true);
   };
   var handleProjectsClose = function () {
     // document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
     document.querySelector("#projects-open-mobile").id = "projects";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Languages - mobile
   var handleLanguagesClick = function () {
     document.querySelector("#languages").id = "languages-open-mobile";
     openWindow = "languages";
+    handleBlur(true);
   };
   var handleLanguagesClose = function () {
     document.querySelector("#languages-open-mobile").id = "languages";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Contact - mobile
   var handleContactClick = function () {
     document.querySelector("#contact").id = "contact-open-mobile";
     openWindow = "contact";
+    handleBlur(true);
   };
   var handleContactClose = function () {
     document.querySelector("#contact-open-mobile").id = "contact";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Else if not mobile
@@ -185,6 +209,7 @@ if (media.matches) {
     document.querySelector("#about").id = "about-open";
     document.querySelector(".about-text-container").style =
       "opacity: 1; transition-delay: 1s; padding: 10px;";
+    handleBlur(true);
     openWindow = "about";
   };
   var handleAboutClose = function () {
@@ -192,6 +217,7 @@ if (media.matches) {
     document.querySelector(".about-text-container").style =
       "opacity: 0; transition-duration: 1s;";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Projects
@@ -199,30 +225,36 @@ if (media.matches) {
     // document.querySelector('.currently-working-on').style = "z-index: 9; opacity: 1; transition-duration: 1s; height: 7vh; width: 80vw; position: absolute; padding: 0px;";
     document.querySelector("#projects").id = "projects-open";
     openWindow = "projects";
+    handleBlur(true);
   };
   var handleProjectsClose = function () {
     // document.querySelector('.currently-working-on').style = "z-index: -1 opacity: 0; transition-duration: 1s;";
     document.querySelector("#projects-open").id = "projects";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Languages
   var handleLanguagesClick = function () {
     document.querySelector("#languages").id = "languages-open";
     openWindow = "languages";
+    handleBlur(true);
   };
   var handleLanguagesClose = function () {
     document.querySelector("#languages-open").id = "languages";
     openWindow = "";
+    handleBlur(false);
   };
 
   //Contact
   var handleContactClick = function () {
     document.querySelector("#contact").id = "contact-open";
     openWindow = "contact";
+    handleBlur(true);
   };
   var handleContactClose = function () {
     document.querySelector("#contact-open").id = "contact";
     openWindow = "";
+    handleBlur(false);
   };
 }

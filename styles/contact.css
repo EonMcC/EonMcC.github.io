@@ -6,13 +6,14 @@
   z-index: -1;
   position: absolute;
   top: 70%;
-  left: 75%;
+  left: 60%;
   border-radius: 10px;
   border: solid black 1px;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   overflow: hidden;
   font-size: 1.2rem;
+  transition-duration: 1s;
 }
 #contact-open {
   opacity: 1;
