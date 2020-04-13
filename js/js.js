@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   var intervalID = window.setInterval(fadeIn, 1);
   var intervalID = window.setInterval(fadeOut, 10);
 
+  setTimeout(() => {
+    const landingText = document.querySelector(".landing-text");
+    landingText.style = "z-index: 10;";
+  }, 5000);
+
   const body = document.querySelector(".main-grid");
   body.addEventListener("click", handleAllClose);
 
