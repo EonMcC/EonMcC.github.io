@@ -9,25 +9,19 @@
   left: 70%;
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   overflow: hidden;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
 }
 #languages-open {
   background-color: var(--bg);
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   z-index: 10;
   opacity: 1;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
   height: 80vh;
   width: 75vw;
@@ -41,13 +35,10 @@
   background-color: var(--bg);
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   z-index: 10;
   opacity: 1;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
   height: auto;
   width: 95vw;
@@ -76,8 +67,6 @@
   font-weight: 500;
   color: white;
   background-color: rgba(158, 0, 50, 0.9);
-  -webkit-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
   overflow: visible;
   border-radius: 5px;
@@ -86,29 +75,15 @@
 }
 
 .language-flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .language-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   margin: 3% 5% 0% 5%;

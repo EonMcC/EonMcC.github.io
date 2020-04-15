@@ -1,0 +1,254 @@
+:root {
+  --bg: white;
+  --landing-bg: linear-gradient(#60c9da, #08a4bd);
+  --main-bg: linear-gradient(#08a4bd, #60c9da);
+  --text: #121212;
+}
+html[data-theme="dark"] {
+  --bg: #121212;
+  --landing-bg: linear-gradient(black, #0c6977);
+  --main-bg: linear-gradient(#0c6977, black);
+  --text: white;
+}
+
+@media (max-width: 3000px) {
+  * {
+    margin: 0;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    color: var(--text);
+  }
+
+  #main {
+    height: 100vh;
+    width: 100vw;
+    background-image: var(--main-bg);
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 1%;
+    z-index: 10;
+  }
+  .toggle-container > p {
+    padding-left: 17px;
+  }
+
+  input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: #08a4bd;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  label:active:after {
+    width: 45px;
+  }
+  html.transition,
+  html.transition *,
+  html.transition *:before,
+  html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+  }
+
+  .main-grid {
+    height: 90vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(9, 1fr);
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    padding-left: 5%;
+    color: white;
+    font-family: "Tomorrow", sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-style: oblique;
+    border-bottom: 4px solid #08a4bd;
+    margin-right: 20%;
+    margin-left: 10%;
+    text-shadow: -2px -2px 2px #08a4bd, 2px -2px 2px #08a4bd,
+      -2px 2px 2px #08a4bd, 2px 2px 2px #08a4bd;
+  }
+
+  .about-me {
+    grid-area: 2/2/3/3;
+    transform: rotate(-5deg);
+  }
+
+  .about-me:hover {
+    color: #f18f01;
+    transition-duration: 1s;
+    text-shadow: none;
+  }
+
+  .projects {
+    grid-area: 4/2/5/3;
+    transform: rotate(-5deg);
+  }
+
+  .projects:hover {
+    color: #690375;
+    transition-duration: 1s;
+    text-shadow: none;
+  }
+
+  .languages {
+    grid-area: 6/2/7/3;
+    transform: rotate(-5deg);
+  }
+
+  .languages:hover {
+    color: #9e0031;
+    transition-duration: 1s;
+    text-shadow: none;
+  }
+
+  .contact {
+    grid-area: 8/2/9/3;
+    transform: rotate(-5deg);
+  }
+
+  .contact:hover {
+    color: #7fc926;
+    transition-duration: 1s;
+    text-shadow: none;
+  }
+
+  .polaroid-container {
+    grid-area: 1/1/10/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .polaroids {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .close {
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    cursor: pointer;
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
+
+  .close:hover {
+    transform: scale(1.3);
+    opacity: 0.8;
+  }
+
+  .close:active {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  button img {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+  }
+
+  p {
+    padding: 5% 10%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+@media (max-width: 1000px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 50%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    padding-top: 5%;
+    padding-left: 0;
+    color: white;
+    font-family: "Tomorrow", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-style: oblique;
+    border-bottom: 4px solid #08a4bd;
+    margin: auto;
+    text-shadow: -2px -2px 2px #08a4bd, 2px -2px 2px #08a4bd,
+      -2px 2px 2px #08a4bd, 2px 2px 2px #08a4bd;
+    width: 40%;
+  }
+
+  .about-me {
+    grid-area: 1/1/2/2;
+    transform: rotate(-5deg);
+  }
+
+  .projects {
+    grid-area: 2/1/3/2;
+    transform: rotate(-5deg);
+  }
+
+  .languages {
+    grid-area: 3/1/4/2;
+    transform: rotate(-5deg);
+  }
+
+  .contact {
+    grid-area: 4/1/5/2;
+    transform: rotate(-5deg);
+  }
+
+  .polaroid-container {
+    grid-area: 5/1/6/2;
+  }
+
+  .polaroids {
+    width: 80%;
+  }
+}

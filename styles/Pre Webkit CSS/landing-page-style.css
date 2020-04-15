@@ -2,14 +2,8 @@
   height: 100vh;
   width: 100vw;
   background-image: var(--landing-bg);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -29,7 +23,6 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(40, 1fr);
   overflow: hidden;
@@ -40,7 +33,5 @@
   color: white;
   height: 50px;
   width: 50px;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
 }

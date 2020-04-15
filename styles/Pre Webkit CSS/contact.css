@@ -9,13 +9,10 @@
   left: 60%;
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   overflow: hidden;
   font-size: 1.2rem;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
 }
 #contact-open {
@@ -29,12 +26,9 @@
   left: 20%;
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   font-size: 1.2rem;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
   overflow: scroll;
 }
@@ -50,12 +44,9 @@
   left: 1%;
   border-radius: 10px;
   border: solid black 1px;
-  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   font-size: 1.4rem;
-  -webkit-transition-duration: 1s;
-  -o-transition-duration: 1s;
   transition-duration: 1s;
 }
 
@@ -71,22 +62,13 @@
 }
 
 .contact-details-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 5% 0% 5% 2%;
 }
 
 .contact-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-left: 10px;
 }

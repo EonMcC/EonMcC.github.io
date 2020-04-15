@@ -11,7 +11,6 @@
     padding: 1%;
     overflow: hidden;
     border: solid black 1px;
-    -webkit-box-shadow: 5px 5px 5px black;
     box-shadow: 5px 5px 5px black;
     border-radius: 10px;
     transition-duration: 1s;
@@ -21,8 +20,6 @@
     background-color: var(--bg);
     z-index: 10;
     opacity: 1;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
     transition-duration: 1s;
     height: 80vh;
     width: 55vw;
@@ -30,7 +27,6 @@
     top: 10%;
     left: 25%;
     border: solid black 1px;
-    -webkit-box-shadow: 5px 5px 5px black;
     box-shadow: 5px 5px 5px black;
     border-radius: 10px;
     transition-duration: 1s;
@@ -63,8 +59,6 @@
   #about-open-mobile {
     z-index: 10;
     opacity: 1;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
     transition-duration: 1s;
     height: auto;
     width: 95vw;
@@ -75,7 +69,6 @@
     background-color: var(--bg);
     border-radius: 10px;
     border: solid black 1px;
-    -webkit-box-shadow: 5px 5px 5px black;
     box-shadow: 5px 5px 5px black;
     padding: 1%;
     overflow: hidden;

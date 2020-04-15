@@ -7,22 +7,55 @@
   left: 10%;
   border-radius: 10px;
   border: solid black 1px;
+  -webkit-box-shadow: 5px 5px 5px black;
   box-shadow: 5px 5px 5px black;
   padding: 1%;
   overflow: hidden;
   color: white;
+  -webkit-animation-name: example;
   animation-name: example;
+  -webkit-animation-duration: 5s;
   animation-duration: 5s;
+  -webkit-animation-play-state: running;
   animation-play-state: running;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes example {
+  0% {
+    background-color: #a839b4;
+  }
+  25% {
+    background-color: #9420a1;
+  }
+  50% {
+    background-color: #6a0375;
+  }
+  75% {
+    background-color: #9d0dad;
+  }
+  100% {
+    background-color: #9420a1;
+  }
+}
+
 @keyframes example {
-  0% {background-color: #a839b4;}
-  25% {background-color: #9420a1;}
-  50% {background-color: #6a0375;}
-  75% {background-color: #9d0dad;}
-  100% {background-color: #9420a1;}
+  0% {
+    background-color: #a839b4;
+  }
+  25% {
+    background-color: #9420a1;
+  }
+  50% {
+    background-color: #6a0375;
+  }
+  75% {
+    background-color: #9d0dad;
+  }
+  100% {
+    background-color: #9420a1;
+  }
 }
 
 .currently-working-on p {

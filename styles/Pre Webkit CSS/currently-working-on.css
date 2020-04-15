@@ -1,0 +1,32 @@
+.currently-working-on {
+  opacity: 0;
+  background-color: #690375;
+  z-index: -1;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  border-radius: 10px;
+  border: solid black 1px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1%;
+  overflow: hidden;
+  color: white;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {background-color: #a839b4;}
+  25% {background-color: #9420a1;}
+  50% {background-color: #6a0375;}
+  75% {background-color: #9d0dad;}
+  100% {background-color: #9420a1;}
+}
+
+.currently-working-on p {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
